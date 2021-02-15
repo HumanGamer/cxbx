@@ -680,6 +680,9 @@ XboxExe::XboxExe(Xbe *x_Xbe, DebugMode x_debug_mode, char *x_debug_filename, HWN
             m_OptionalHeader.m_sizeof_image                = sizeof_image;
         }
 
+        // Set Entry Point
+        m_OptionalHeader.m_entry = x_Xbe->m_Header.dwEntryAddr; // Invalid?
+
         // ******************************************************************
         // * we'll set code base as the virtual address of the first section
         // ******************************************************************
