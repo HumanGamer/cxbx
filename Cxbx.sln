@@ -1,14 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cxbe", "Cxbe.vcproj", "{57797CD3-1E84-4CC4-9262-88900785F944}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cxbe", "Cxbe.vcxproj", "{57797CD3-1E84-4CC4-9262-88900785F944}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cxbx", "Cxbx.vcproj", "{AAB45775-8951-4D79-8F0C-6EDE4F81D7E2}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C5D1B9AB-7B32-4645-8B99-222384E41512} = {C5D1B9AB-7B32-4645-8B99-222384E41512}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cxbx", "Cxbx.vcxproj", "{AAB45775-8951-4D79-8F0C-6EDE4F81D7E2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CxbxKrnl", "CxbxKrnl.vcproj", "{C5D1B9AB-7B32-4645-8B99-222384E41512}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CxbxKrnl", "CxbxKrnl.vcxproj", "{C5D1B9AB-7B32-4645-8B99-222384E41512}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0555F450-B732-4D65-B6D2-61629A67EBF4}
 	EndGlobalSection
 EndGlobal
