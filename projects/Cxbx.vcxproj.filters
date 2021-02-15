@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{471d6a48-8479-430f-a74d-a65e0c5513d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\jpegdec %28h%29">
+      <UniqueIdentifier>{a0355a81-cdd6-4f2b-ba71-826c73cbfb8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{5f7a9f87-f7af-4e54-851c-2cd808e06185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{dfd7d410-9cc6-4e8a-b964-17fca14adf98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\jpegdec %28cpp%29">
+      <UniqueIdentifier>{7d09ef92-408f-4d22-a80b-f7233155f7dd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Common\Error.h" />
+    <ClInclude Include="..\Source\Common\Exe.h" />
+    <ClInclude Include="..\Source\Common\Win32\AlignPosfix1.h" />
+    <ClInclude Include="..\Source\Common\Win32\AlignPrefix1.h" />
+    <ClInclude Include="..\Source\Common\Win32\Mutex.h" />
+    <ClInclude Include="..\Source\Common\Win32\XBController.h" />
+    <ClInclude Include="..\Source\Common\Win32\XBVideo.h" />
+    <ClInclude Include="..\Source\Common\Xbe.h" />
+    <ClInclude Include="..\Source\Cxbx.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\CxbxKrnl.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\Emu.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8Types.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\Convert.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\PushBuffer.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\State.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\VertexBuffer.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\VertexShader.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuDInput.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuDSound.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuShared.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXapi.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXG.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXOnline.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXTL.h" />
+    <ClInclude Include="..\Source\Cxbx\DlgControllerConfig.h" />
+    <ClInclude Include="..\Source\Cxbx\DlgVideoConfig.h" />
+    <ClInclude Include="..\Source\Cxbx\EmuExe.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jconfig.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jmorecfg.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jpegdec.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jpeglib.h" />
+    <ClInclude Include="..\Source\Cxbx\Prolog.h" />
+    <ClInclude Include="..\Source\Cxbx\Wnd.h" />
+    <ClInclude Include="..\Source\Cxbx\WndAbout.h" />
+    <ClInclude Include="..\Source\Cxbx\WndMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resource\About.jpg" />
+    <Image Include="..\Resource\Cxbx.ico" />
+    <Image Include="..\Resource\Logo.bmp" />
+    <Image Include="..\Resource\Splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Resource\Cxbx.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Common\Error.cpp" />
+    <ClCompile Include="..\Source\Common\Exe.cpp" />
+    <ClCompile Include="..\Source\Common\OpenXDK.cpp" />
+    <ClCompile Include="..\Source\Common\Win32\Mutex.cpp" />
+    <ClCompile Include="..\Source\Common\Win32\XBController.cpp" />
+    <ClCompile Include="..\Source\Common\Win32\XBVideo.cpp" />
+    <ClCompile Include="..\Source\Common\Xbe.cpp" />
+    <ClCompile Include="..\Source\Cxbx\DlgControllerConfig.cpp" />
+    <ClCompile Include="..\Source\Cxbx\DlgVideoConfig.cpp" />
+    <ClCompile Include="..\Source\Cxbx\EmuExe.cpp" />
+    <ClCompile Include="..\Source\Cxbx\jpegdec\jpegdec.cpp" />
+    <ClCompile Include="..\Source\Cxbx\Prolog.cpp" />
+    <ClCompile Include="..\Source\Cxbx\WinMain.cpp" />
+    <ClCompile Include="..\Source\Cxbx\Wnd.cpp" />
+    <ClCompile Include="..\Source\Cxbx\WndAbout.cpp" />
+    <ClCompile Include="..\Source\Cxbx\WndMain.cpp" />
+  </ItemGroup>
+</Project>
