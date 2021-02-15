@@ -27,6 +27,9 @@
     <ClInclude Include="..\Source\Common\Xbe.h">
       <Filter>Include</Filter>
     </ClInclude>
+    <ClInclude Include="..\source\Cxbe\XboxExe.h">
+      <Filter>Include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Common\Error.cpp">
@@ -42,6 +45,9 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\Common\Xbe.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Cxbe\XboxExe.cpp">
       <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>

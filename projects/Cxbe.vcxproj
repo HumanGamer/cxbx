@@ -108,6 +108,7 @@
     <ClInclude Include="..\Source\Common\Win32\AlignPosfix1.h" />
     <ClInclude Include="..\Source\Common\Win32\AlignPrefix1.h" />
     <ClInclude Include="..\Source\Common\Xbe.h" />
+    <ClInclude Include="..\source\Cxbe\XboxExe.h" />
     <ClInclude Include="..\Source\Cxbx.h" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +117,7 @@
     <ClCompile Include="..\Source\Common\OpenXDK.cpp" />
     <ClCompile Include="..\Source\Common\Xbe.cpp" />
     <ClCompile Include="..\Source\Cxbe\Main.cpp" />
+    <ClCompile Include="..\source\Cxbe\XboxExe.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

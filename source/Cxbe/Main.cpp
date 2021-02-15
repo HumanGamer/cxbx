@@ -35,6 +35,8 @@
 #include "../Common/Exe.h"
 #include "../Common/Xbe.h"
 
+#include "XboxExe.h"
+
 #include <string.h>
 
 // static global(s)
@@ -50,6 +52,7 @@ int main(int argc, char *argv[])
     char szDumpFilename[266] = {0};
     char szXbeTitle[256]     = "Untitled";
     bool bRetail             = true;
+    bool bToExe              = false;
 
     // parse command line
     for(int v=1;v<argc;v++)
@@ -104,7 +107,12 @@ int main(int argc, char *argv[])
             MakeUpper(szOptionU);
             MakeUpper(szParamU);
 
-            if(strcmp(szOptionU, "OUT") == 0)
+            if (strcmp(szOptionU, "TOEXE") == 0)
+            {
+                strcpy(szXbeFilename, szParam);
+                bToExe = true;
+            }
+            else if(strcmp(szOptionU, "OUT") == 0)
             {
                 strcpy(szXbeFilename, szParam);
             }
@@ -183,8 +191,29 @@ int main(int argc, char *argv[])
         }
     }
 
-    // open and convert Exe file
+    if (bToExe)
     {
+        Xbe* XbeFile = new Xbe(szXbeFilename);
+
+        if (XbeFile->GetError() != 0)
+        {
+            strcpy(szErrorMessage, XbeFile->GetError());
+            goto cleanup;
+        }
+
+        char filename[260] = "KrnlDebug.txt";
+        XboxExe Exe(XbeFile, DM_NONE, filename, NULL);
+
+        Exe.Export(szExeFilename);
+
+        if (Exe.GetError() != 0)
+        {
+            strcpy(szErrorMessage, XbeFile->GetError());
+            goto cleanup;
+        }
+    } else
+    {
+        // open and convert Exe file
         Exe *ExeFile = new Exe(szExeFilename);
 
         if(ExeFile->GetError() != 0)
