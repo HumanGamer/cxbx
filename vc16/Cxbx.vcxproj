@@ -42,13 +42,13 @@
     <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\Bin\Debug\</OutDir>
-    <IntDir>.\Bin\Debug\</IntDir>
+    <OutDir>..\Bin\Debug\</OutDir>
+    <IntDir>..\Bin\Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\Bin\</OutDir>
-    <IntDir>.\Bin\</IntDir>
+    <OutDir>..\Bin\</OutDir>
+    <IntDir>..\Bin\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -57,22 +57,22 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\Bin\Debug/Cxbx.tlb</TypeLibraryName>
+      <TypeLibraryName>..\Bin\Debug/Cxbx.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>Source;Source\Common\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Common\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <PrecompiledHeaderOutputFile>.\Bin\Debug/Cxbx.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Bin\Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\Bin\Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Bin\Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\Bin\Debug/Cxbx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\Bin\Debug/</AssemblerListingLocation>
+      <ObjectFileName>..\Bin\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>..\Bin\Debug/</ProgramDataBaseFileName>
       <BrowseInformation>true</BrowseInformation>
-      <BrowseInformationFile>.\Bin\Debug/</BrowseInformationFile>
+      <BrowseInformationFile>..\Bin\Debug/</BrowseInformationFile>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -84,20 +84,20 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libjpeg.lib;d3d8.lib;dinput8.lib;dxguid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>.\Bin\Debug/Cxbx.exe</OutputFile>
+      <OutputFile>..\Bin\Debug/Cxbx.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>Lib;Import\libjpeg\win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>Lib;..\Import\libjpeg\win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Bin\Debug/Cxbx.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\Bin\Debug/Cxbx.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>.\Bin\Debug/Cxbx.map</MapFileName>
+      <MapFileName>..\Bin\Debug/Cxbx.map</MapFileName>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Bin\Debug/Cxbx.bsc</OutputFile>
+      <OutputFile>..\Bin\Debug/Cxbx.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -106,23 +106,23 @@
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\Bin/Cxbx.tlb</TypeLibraryName>
+      <TypeLibraryName>..\Bin/Cxbx.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>Source;Source\Common\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Common\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>.\Bin/Cxbx.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Bin/</AssemblerListingLocation>
-      <ObjectFileName>.\Bin/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Bin/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\Bin/Cxbx.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\Bin/</AssemblerListingLocation>
+      <ObjectFileName>..\Bin/</ObjectFileName>
+      <ProgramDataBaseFileName>..\Bin/</ProgramDataBaseFileName>
       <BrowseInformation>true</BrowseInformation>
-      <BrowseInformationFile>.\Bin/</BrowseInformationFile>
+      <BrowseInformationFile>..\Bin/</BrowseInformationFile>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -134,89 +134,89 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>libjpeg.lib;d3d8.lib;dinput8.lib;dxguid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>.\Bin/Cxbx.exe</OutputFile>
+      <OutputFile>..\Bin/Cxbx.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>lib;Import\libjpeg\win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>lib;..\Import\libjpeg\win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Bin/Cxbx.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\Bin/Cxbx.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>.\Bin/Cxbx.map</MapFileName>
+      <MapFileName>..\Bin/Cxbx.map</MapFileName>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Bin/Cxbx.bsc</OutputFile>
+      <OutputFile>..\Bin/Cxbx.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Common\Error.h" />
-    <ClInclude Include="Source\Common\Exe.h" />
-    <ClInclude Include="Source\Common\Win32\AlignPosfix1.h" />
-    <ClInclude Include="Source\Common\Win32\AlignPrefix1.h" />
-    <ClInclude Include="Source\Common\Win32\Mutex.h" />
-    <ClInclude Include="Source\Common\Win32\XBController.h" />
-    <ClInclude Include="Source\Common\Win32\XBVideo.h" />
-    <ClInclude Include="Source\Common\Xbe.h" />
-    <ClInclude Include="Source\Cxbx.h" />
-    <ClInclude Include="Source\CxbxKrnl\CxbxKrnl.h" />
-    <ClInclude Include="Source\CxbxKrnl\Emu.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuD3D8.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuD3D8Types.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuD3D8\Convert.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuD3D8\PushBuffer.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuD3D8\State.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuD3D8\VertexBuffer.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuD3D8\VertexShader.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuDInput.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuDSound.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuShared.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuXapi.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuXG.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuXOnline.h" />
-    <ClInclude Include="Source\CxbxKrnl\EmuXTL.h" />
-    <ClInclude Include="Source\Cxbx\DlgControllerConfig.h" />
-    <ClInclude Include="Source\Cxbx\DlgVideoConfig.h" />
-    <ClInclude Include="Source\Cxbx\EmuExe.h" />
-    <ClInclude Include="Source\Cxbx\jpegdec\jconfig.h" />
-    <ClInclude Include="Source\Cxbx\jpegdec\jmorecfg.h" />
-    <ClInclude Include="Source\Cxbx\jpegdec\jpegdec.h" />
-    <ClInclude Include="Source\Cxbx\jpegdec\jpeglib.h" />
-    <ClInclude Include="Source\Cxbx\Prolog.h" />
-    <ClInclude Include="Source\Cxbx\Wnd.h" />
-    <ClInclude Include="Source\Cxbx\WndAbout.h" />
-    <ClInclude Include="Source\Cxbx\WndMain.h" />
+    <ClInclude Include="..\Source\Common\Error.h" />
+    <ClInclude Include="..\Source\Common\Exe.h" />
+    <ClInclude Include="..\Source\Common\Win32\AlignPosfix1.h" />
+    <ClInclude Include="..\Source\Common\Win32\AlignPrefix1.h" />
+    <ClInclude Include="..\Source\Common\Win32\Mutex.h" />
+    <ClInclude Include="..\Source\Common\Win32\XBController.h" />
+    <ClInclude Include="..\Source\Common\Win32\XBVideo.h" />
+    <ClInclude Include="..\Source\Common\Xbe.h" />
+    <ClInclude Include="..\Source\Cxbx.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\CxbxKrnl.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\Emu.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8Types.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\Convert.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\PushBuffer.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\State.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\VertexBuffer.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuD3D8\VertexShader.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuDInput.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuDSound.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuShared.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXapi.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXG.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXOnline.h" />
+    <ClInclude Include="..\Source\CxbxKrnl\EmuXTL.h" />
+    <ClInclude Include="..\Source\Cxbx\DlgControllerConfig.h" />
+    <ClInclude Include="..\Source\Cxbx\DlgVideoConfig.h" />
+    <ClInclude Include="..\Source\Cxbx\EmuExe.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jconfig.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jmorecfg.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jpegdec.h" />
+    <ClInclude Include="..\Source\Cxbx\jpegdec\jpeglib.h" />
+    <ClInclude Include="..\Source\Cxbx\Prolog.h" />
+    <ClInclude Include="..\Source\Cxbx\Wnd.h" />
+    <ClInclude Include="..\Source\Cxbx\WndAbout.h" />
+    <ClInclude Include="..\Source\Cxbx\WndMain.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resource\About.jpg" />
-    <Image Include="Resource\Cxbx.ico" />
-    <Image Include="Resource\Logo.bmp" />
-    <Image Include="Resource\Splash.jpg" />
+    <Image Include="..\Resource\About.jpg" />
+    <Image Include="..\Resource\Cxbx.ico" />
+    <Image Include="..\Resource\Logo.bmp" />
+    <Image Include="..\Resource\Splash.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Resource\Cxbx.rc">
+    <ResourceCompile Include="..\Resource\Cxbx.rc">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Common\Error.cpp" />
-    <ClCompile Include="Source\Common\Exe.cpp" />
-    <ClCompile Include="Source\Common\OpenXDK.cpp" />
-    <ClCompile Include="Source\Common\Win32\Mutex.cpp" />
-    <ClCompile Include="Source\Common\Win32\XBController.cpp" />
-    <ClCompile Include="Source\Common\Win32\XBVideo.cpp" />
-    <ClCompile Include="Source\Common\Xbe.cpp" />
-    <ClCompile Include="Source\Cxbx\DlgControllerConfig.cpp" />
-    <ClCompile Include="Source\Cxbx\DlgVideoConfig.cpp" />
-    <ClCompile Include="Source\Cxbx\EmuExe.cpp" />
-    <ClCompile Include="Source\Cxbx\jpegdec\jpegdec.cpp" />
-    <ClCompile Include="Source\Cxbx\Prolog.cpp" />
-    <ClCompile Include="Source\Cxbx\WinMain.cpp" />
-    <ClCompile Include="Source\Cxbx\Wnd.cpp" />
-    <ClCompile Include="Source\Cxbx\WndAbout.cpp" />
-    <ClCompile Include="Source\Cxbx\WndMain.cpp" />
+    <ClCompile Include="..\Source\Common\Error.cpp" />
+    <ClCompile Include="..\Source\Common\Exe.cpp" />
+    <ClCompile Include="..\Source\Common\OpenXDK.cpp" />
+    <ClCompile Include="..\Source\Common\Win32\Mutex.cpp" />
+    <ClCompile Include="..\Source\Common\Win32\XBController.cpp" />
+    <ClCompile Include="..\Source\Common\Win32\XBVideo.cpp" />
+    <ClCompile Include="..\Source\Common\Xbe.cpp" />
+    <ClCompile Include="..\Source\Cxbx\DlgControllerConfig.cpp" />
+    <ClCompile Include="..\Source\Cxbx\DlgVideoConfig.cpp" />
+    <ClCompile Include="..\Source\Cxbx\EmuExe.cpp" />
+    <ClCompile Include="..\Source\Cxbx\jpegdec\jpegdec.cpp" />
+    <ClCompile Include="..\Source\Cxbx\Prolog.cpp" />
+    <ClCompile Include="..\Source\Cxbx\WinMain.cpp" />
+    <ClCompile Include="..\Source\Cxbx\Wnd.cpp" />
+    <ClCompile Include="..\Source\Cxbx\WndAbout.cpp" />
+    <ClCompile Include="..\Source\Cxbx\WndMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="CxbxKrnl.vcxproj">

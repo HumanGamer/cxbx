@@ -42,32 +42,32 @@
     <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\Bin\</OutDir>
-    <IntDir>.\Bin\</IntDir>
+    <OutDir>..\Bin\</OutDir>
+    <IntDir>..\Bin\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\Bin/Debug\</OutDir>
-    <IntDir>.\Bin/Debug\</IntDir>
+    <OutDir>..\Bin/Debug\</OutDir>
+    <IntDir>..\Bin/Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <TypeLibraryName>.\Bin/Cxbe.tlb</TypeLibraryName>
+      <TypeLibraryName>..\Bin/Cxbe.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>Source;Source\Common\Win32;Source\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Common\Win32;..\Source\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <PrecompiledHeaderOutputFile>.\Bin/Cxbe.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Bin/</AssemblerListingLocation>
-      <ObjectFileName>.\Bin/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Bin/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\Bin/Cxbe.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\Bin/</AssemblerListingLocation>
+      <ObjectFileName>..\Bin/</ObjectFileName>
+      <ProgramDataBaseFileName>..\Bin/</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
@@ -76,33 +76,33 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>.\Bin/Cxbe.exe</OutputFile>
+      <OutputFile>..\Bin/Cxbe.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ProgramDatabaseFile>.\Bin/Cxbe.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\Bin/Cxbe.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Bin/Cxbe.bsc</OutputFile>
+      <OutputFile>..\Bin/Cxbe.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <TypeLibraryName>.\Bin/Debug/Cxbe.tlb</TypeLibraryName>
+      <TypeLibraryName>..\Bin/Debug/Cxbe.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>Source;Source\Common\Win32;Source\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Source;..\Source\Common\Win32;..\Source\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <PrecompiledHeaderOutputFile>.\Bin/Debug/Cxbe.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Bin/Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\Bin/Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Bin/Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>..\Bin/Debug/Cxbe.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>..\Bin/Debug/</AssemblerListingLocation>
+      <ObjectFileName>..\Bin/Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>..\Bin/Debug/</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -112,34 +112,34 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>.\Bin/Debug/Cxbe.exe</OutputFile>
+      <OutputFile>..\Bin/Debug/Cxbe.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Bin/Debug/Cxbe.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>..\Bin/Debug/Cxbe.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
-      <MapFileName>.\Bin/Debug/Cxbe.map</MapFileName>
+      <MapFileName>..\Bin/Debug/Cxbe.map</MapFileName>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Bin/Debug/Cxbe.bsc</OutputFile>
+      <OutputFile>..\Bin/Debug/Cxbe.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Common\Error.h" />
-    <ClInclude Include="Source\Common\Exe.h" />
-    <ClInclude Include="Source\Common\Win32\AlignPosfix1.h" />
-    <ClInclude Include="Source\Common\Win32\AlignPrefix1.h" />
-    <ClInclude Include="Source\Common\Xbe.h" />
-    <ClInclude Include="Source\Cxbx.h" />
+    <ClInclude Include="..\Source\Common\Error.h" />
+    <ClInclude Include="..\Source\Common\Exe.h" />
+    <ClInclude Include="..\Source\Common\Win32\AlignPosfix1.h" />
+    <ClInclude Include="..\Source\Common\Win32\AlignPrefix1.h" />
+    <ClInclude Include="..\Source\Common\Xbe.h" />
+    <ClInclude Include="..\Source\Cxbx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Common\Error.cpp" />
-    <ClCompile Include="Source\Common\Exe.cpp" />
-    <ClCompile Include="Source\Common\OpenXDK.cpp" />
-    <ClCompile Include="Source\Common\Xbe.cpp" />
-    <ClCompile Include="Source\Cxbe\Main.cpp" />
+    <ClCompile Include="..\Source\Common\Error.cpp" />
+    <ClCompile Include="..\Source\Common\Exe.cpp" />
+    <ClCompile Include="..\Source\Common\OpenXDK.cpp" />
+    <ClCompile Include="..\Source\Common\Xbe.cpp" />
+    <ClCompile Include="..\Source\Cxbe\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
