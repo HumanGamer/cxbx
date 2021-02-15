@@ -55,7 +55,6 @@
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\Source;..\Source\Common\Win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
